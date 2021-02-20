@@ -14,10 +14,7 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "build:tailwind": "tailwind build src/tailwind.css -o src/tailwind.output.css",
-    "start": "npm-run-all build:tailwind --parallel watch:tailwind start:react",
-    "prebuild": "npm run build:tailwind",
-    "start:react": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,7 +39,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
-    "postcss": "^8.2.6",
-    "tailwindcss": "^2.0.3"
+    "postcss": "^8.2.6"
   }
 }
