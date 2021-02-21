@@ -47,6 +47,9 @@
 
 .nav-item {
   height: 80px;
+  width: 90%;
+  padding: 3px;
+
 }
 
 .nav-links {
@@ -98,11 +101,14 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+    
   }
 
   .nav-links {
     text-align: center;
     padding: 2rem;
+    padding-left: 2px;
+    padding-right: 2px;
     width: 100%;
     display: table;
   }
@@ -129,18 +135,20 @@
     font-size: 1.8rem;
     cursor: pointer;
   }
-
+  
+/* To do
   .fa-times {
     color: #fff;
     font-size: 2rem;
   }
-
+*/
   .nav-links-mobile {
     display: block;
     text-align: center;
     margin: 2rem auto;
     border-radius: 4px;
     width: 80%;
+    
     text-decoration: none;
     font-size: 1.5rem;
     background-color: transparent;
