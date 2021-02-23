@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
 
+import './Navbar.css';
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -24,16 +24,20 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
 
+
   return (
     <>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       <nav className='navbar'>
+        
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             TRAVEL
             <i class='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
-            |||<i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            <i className={click ? 'fa fa-times' : 'fa fa-bars'} />
+       
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
