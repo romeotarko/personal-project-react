@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Body from './components/Body';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Cards from './components/Cards';
 
 
 function App() {
@@ -12,13 +13,8 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route path='/' exact component={'Home'} />
-          <Route path='/services' component={'Services'} />
-          <Route path='/products' component={'Product'} />
-          <Route path='/sign-up' component={'Sing up'} />
-        </Switch>
-        <Body />
+              <Body />
+              <Cards />
         <Footer />
       </Router> 
     </>
